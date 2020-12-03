@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.PostUpdate">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/basicColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_8_dp"
+            android:layout_marginTop="@dimen/margin_8_dp"
+            android:layout_marginBottom="@dimen/margin_8_dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitleId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_4_dp"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/margin_30_dp"
+            android:text="@string/app_name"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_4_dp"
+        android:layout_marginEnd="@dimen/margin_4_dp"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+        <LinearLayout
+            android:id="@+id/layoutKeyboardHide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_4_dp"
+                android:layout_marginTop="@dimen/margin_4_dp"
+                android:layout_marginEnd="@dimen/margin_4_dp"
+                android:background="@drawable/border_shape"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/upload_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/padding_4_dp"
+                    android:text="@string/month_from"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spUpdatePostAdMonthId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/padding_4_dp"
+                    android:text="@string/category"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spUpdatPostAdCatagoryId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearPostAdSeatId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/padding_4_dp"
+                    android:text="@string/how_many"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etUpdatPostAdSeatId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape"
+                    android:hint="@string/sample_seat"
+                    android:inputType="number"
+                    android:lines="10"
+                    android:padding="@dimen/padding_8_dp"
+                    android:textColor="@color/blackColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPostAdFloorId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/padding_4_dp"
+                    android:text="@string/floor_no"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etUpdatePostAdFloorId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape"
+                    android:hint="@string/sample_of_floor_no"
+                    android:inputType="textCapSentences"
+                    android:lines="10"
+                    android:padding="@dimen/padding_8_dp"
+                    android:textColor="@color/blackColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/padding_4_dp"
+                    android:text="@string/rent_tk"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etUpdatPostAdRentId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape"
+                    android:hint="@string/sample_amount"
+                    android:inputType="number"
+                    android:padding="@dimen/padding_8_dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/padding_4_dp"
+                    android:text="@string/location"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvUpdatPostAdLocationid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape"
+                    android:hint="@string/your_location"
+                    android:inputType="textCapSentences"
+                    android:padding="@dimen/padding_8_dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:padding="@dimen/padding_4_dp"
+                android:text="@string/address"
+                android:textColor="@color/blackColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etUpdatPostAdAddressId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4_dp"
+                android:layout_marginEnd="@dimen/margin_4_dp"
+                android:background="@drawable/border_shape"
+                android:gravity="start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="2"
+                android:maxLines="3"
+                android:minLines="2"
+                android:padding="14dp"
+                android:scrollbars="vertical"
+                android:textCursorDrawable="@null" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:padding="@dimen/padding_4_dp"
+                android:text="@string/facilities"
+                android:textColor="@color/blackColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etUpdatPostAdDescriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4_dp"
+                android:layout_marginEnd="@dimen/margin_4_dp"
+                android:background="@drawable/border_shape"
+                android:gravity="start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="100"
+                android:maxLines="3"
+                android:minLines="9"
+                android:padding="14dp"
+                android:scrollbars="vertical"
+                android:textCursorDrawable="@null" />
+
+
+            <TextView
+                android:id="@+id/tvUpdatPostAdErrorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16_dp"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:layout_marginEnd="@dimen/margin_16_dp"
+                android:layout_marginBottom="@dimen/margin_4_dp"
+                android:gravity="center"
+                android:textColor="#FF0909"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btUpdatPostButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_design"
+                android:layout_marginBottom="@dimen/margin_8_dp"
+                android:padding="15dp"
+                android:text="@string/update"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/pbUpdatPostAdProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progress_color"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+

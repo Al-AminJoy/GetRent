@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DrawerPostId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    tools:context=".activitys.OwnPost">
+
+    <include
+        layout="@layout/post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvPostNoPostMessageId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="No Post Available"
+        android:textColor="@color/blackColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/NavPostId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/basicColor"
+        app:itemIconTint="#71767C"
+        app:itemTextColor="@color/whiteColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/tvNavPostNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:gravity="center"
+                android:text="@string/sample_name"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/navigation_headerName_textSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNavPostEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4_dp"
+                android:layout_marginBottom="@dimen/margin_4_dp"
+                android:gravity="center"
+                android:text="@string/sample_email"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/navigation_headerEmail_textSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:background="@color/whiteColor" />
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/navigation_view"
+                        android:layout_marginTop="@dimen/margin_8_dp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_8_dp"
+                        android:layout_marginEnd="80dp"
+                        android:background="@color/whiteColor" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16_dp"
+                        android:layout_marginTop="@dimen/margin_8_dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/communicate"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/communicateTextSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvNavPostfeedbackid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_8_dp"
+                        android:layout_marginTop="@dimen/margin_4_dp"
+                        android:drawableStart="@drawable/ic_feedback"
+                        android:drawablePadding="@dimen/padding_8_dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/feedback"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/navigation_textSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvNavPostLogOutId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_8_dp"
+                        android:layout_marginTop="@dimen/margin_4_dp"
+                        android:layout_marginBottom="@dimen/margin_8_dp"
+                        android:drawableStart="@drawable/ic_log_out"
+                        android:drawablePadding="@dimen/padding_8_dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/log_out"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/navigation_textSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

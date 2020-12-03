@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">Get Rent</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="account_sign_up">Don\'t have an account? Please <font fgcolor='#413752'> <b>Sign Up</b> </font></string>
+    <string name="account_Login">Already have an account? Please <font fgcolor='#413752'><b>Log in </b></font></string>
+
+    <string name="feedback_text">Please Share Your Experience Using Our App. We Will Try To Improve Our App :</string>
+    <string name="facilities">Facilities</string>
+    <string name="sampleFacilities">Please write, that facility you provided. </string>
+    <string name="month_from">Month From</string>
+    <string name="colon">:</string>
+    <string name="category">Category</string>
+    <string name="location">Location</string>
+    <string name="your_location">Your Location</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="rent_tk">Rent (TK)</string>
+    <string name="address">Address</string>
+    <string name="sampleAddress">Please write, your house exact location.</string>
+    <string name="how_many">How many</string>
+    <string name="post">Post</string>
+    <string name="search_location">Search Location</string>
+    <string name="which_floor">Which Floor</string>
+    <string name="number_of_seat">Seat/Room/Flat etc</string>
+    <string name="number_of_floor"> Floor Number</string>
+    <string name="sample_amount">5550</string>
+    <string name="gender">Gender</string>
+    <string name="to">To</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="email_address">Email Address</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="tk">TK</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="login">Login</string>
+    <string name="sample_num">017********</string>
+    <string name="sample_email">sample@gmail.com</string>
+    <string name="number">Number</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update">Update</string>
+    <string name="my_posts">My Post</string>
+    <string name="post_ad">Post Ad</string>
+    <string name="available">Available</string>
+    <string name="floor_no">Floor No</string>
+    <string name="delete">Delete</string>
+    <string name="favorites">Favorites</string>
+    <string name="filter_search">Filter Search</string>
+    <string name="create_post">Create Post</string>
+    <string name="your_posts">Your Posts</string>
+    <string name="profile">Profile</string>
+    <string name="feedback">Feedback</string>
+    <string name="log_out">Log Out</string>
+    <string name="communicate">Communicate</string>
+    <string name="sample_name">Al-Amin Islam Joy</string>
+    <string name="owner_information">Owner Information</string>
+    <string name="about_property">About Property</string>
+    <string name="rent">Rent</string>
+    <string name="from">From</string>
+    <string name="sample_seat">1 Seat/Room/Flat etc</string>
+    <string name="sample_seats">1 / 2/ 3/ 4 etc</string>
+    <string name="sample_of_floor_no">3rd</string>
+    <string name="low_00000">Low-00000 Tk</string>
+    <string name="max_10000000">Max-10000000 Tk</string>
+    <string name="passwordNote">Use 6 or more characters with a mix of letters, numbers &amp; symbols</string>
+
+    <string-array name="monthname">
+        <item>Select Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="post_monthname">
+        <item>Select Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="catagory">
+        <item>Select Category</item>
+        <item>Office</item>
+        <item>Flat</item>
+        <item>Mess</item>
+        <item>Hostel</item>
+        <item>Room</item>
+        <item>Sub-Let</item>
+        <item>Godown</item>
+        <item>Shop</item>
+        <item>Garage</item>
+
+    </string-array>
+    <string-array name="post_catagory">
+        <item>Select Category</item>
+        <item>Office</item>
+        <item>Flat</item>
+        <item>Mess</item>
+        <item>Hostel</item>
+        <item>Room</item>
+        <item>Sub-Let</item>
+        <item>Godown</item>
+        <item>Shop</item>
+        <item>Garage</item>
+
+    </string-array>
+    <string-array name="GenderName">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="Number">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+
+    </string-array>
+    <string-array name="Zeros">
+
+        <item>00</item>
+        <item>000</item>
+        <item>0000</item>
+        <item>00000</item>
+        <item>000000</item>
+        <item>0000000</item>
+
+
+    </string-array>
+
+
+</resources>

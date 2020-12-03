@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="3dp"
+
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        android:background="@color/whiteColor"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearminiadid"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tvpostavailableid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 Seat Available"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <TextView
+                    android:id="@+id/tvpostlocationid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Location : Nikunja-2"
+                    android:textColor="#000"
+                    android:gravity="center"
+
+
+                    />
+                <TextView
+                    android:id="@+id/tvpostmonthfromid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="From : August"
+                    android:textColor="#000"
+                    android:gravity="center"
+
+
+                    />
+                <TextView
+                    android:id="@+id/tvpostgenderid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Gender : Male"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tvpostcatagoryid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Catagory : Mess"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tvpostrentid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Rent (TK) : 4000"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textStyle="bold"
+
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2A4263"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="5"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/appslogo"
+                    android:layout_marginLeft="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/tvpostaddressid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Address : H-26, R-17, Nkikunja-2, Khilkhet- 1229, Dhaka"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvpostdetailsid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/facilities"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Update"
+                    android:background="@drawable/button_design"
+                    android:textColor="@color/whiteColor"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Delete"
+                    android:background="@drawable/button_design"
+                    android:textColor="@color/whiteColor"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

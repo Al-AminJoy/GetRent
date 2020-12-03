@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/editprofiletoolbarid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/basicColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_8_dp"
+            android:layout_marginTop="@dimen/margin_8_dp"
+            android:layout_marginBottom="@dimen/margin_8_dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitleId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_4_dp"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/margin_30_dp"
+            android:text="@string/app_name"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editprofiletoolbarid"
+        android:layout_marginStart="@dimen/margin_4_dp"
+        android:layout_marginEnd="@dimen/margin_4_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/name"
+                    android:textColor="@color/blackColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etEditeProfileNameId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/border_shape"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/padding_8_dp"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/email"
+                    android:textColor="@color/blackColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etEditeProfileEmailId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/border_shape"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_8_dp"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender"
+                    android:textColor="@color/blackColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgEditeProfileGendersId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <RadioButton
+                        android:id="@+id/rbEditeProfileMaleId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/male"
+                        android:textColor="@color/blackColor"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbEditeProfileFeMaleId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/female"
+                        android:textColor="@color/blackColor"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24_dp"
+                android:layout_marginBottom="60dp">
+
+                <Button
+                    android:id="@+id/btEditeProfileUpdateId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_16_dp"
+                    android:layout_marginBottom="@dimen/margin_8_dp"
+                    android:background="@drawable/button_design"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:text="@string/update"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbUpdateProgressId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/progress_color"
+                    android:visibility="gone"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include
+        layout="@layout/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

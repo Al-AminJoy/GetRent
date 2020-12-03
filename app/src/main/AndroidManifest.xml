@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.getrentbd.getrent">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@drawable/appslogo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/appslogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activitys.FavoriteList" />
+        <activity android:name=".activitys.MyPostDetails" />
+        <activity android:name=".activitys.PostUpdate" />
+        <activity android:name=".activitys.ProfileUpdate" />
+        <activity android:name=".activitys.SignUp" />
+        <activity
+            android:name=".activitys.CreatePost"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+        <activity android:name=".activitys.FeedBackActivity" />
+        <activity android:name=".activitys.FilterSearchResult" />
+        <activity android:name=".activitys.FilterSearch" />
+        <activity android:name=".activitys.OwnPost" />
+        <activity android:name=".activitys.ProfileActivity" />
+        <activity android:name=".activitys.DetailsActivity" />
+        <activity android:name=".activitys.HomePage" />
+        <activity
+            android:name=".activitys.LogIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

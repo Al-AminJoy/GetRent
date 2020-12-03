@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/searchheaderid"
+        layout="@layout/toolbar_in_other_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/searchheaderid"
+        android:layout_marginStart="@dimen/margin_30_dp"
+        android:layout_marginEnd="@dimen/margin_30_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center|start"
+                    android:text="@string/month_from"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_8_dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spFilterMonthId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    tools:listitem="@layout/spiner_sample">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center|start"
+                    android:text="@string/category"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_8_dp"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spFilterCatagoryId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    tools:listitem="@layout/spiner_sample">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSelectGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/padding_8_dp"
+                    android:paddingBottom="@dimen/padding_8_dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_8_dp"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgGenderFilterId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/border_shape"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbFilterMaleId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_8_dp"
+                        android:text="@string/male"
+                        android:textColor="@color/blackColor"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFilterMFemaleId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_8_dp"
+                        android:text="@string/female"
+                        android:textColor="@color/blackColor"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center|start"
+                    android:paddingTop="@dimen/padding_8_dp"
+                    android:paddingBottom="@dimen/padding_8_dp"
+                    android:text="@string/location"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_8_dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvFilterLocation"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/border_shape"
+                    android:completionThreshold="1"
+                    android:gravity="center"
+                    android:hint="@string/choose_location"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="@string/rent"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_8_dp"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/etFilterRentFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_shape"
+                        android:gravity="center"
+                        android:hint="@string/low_00000"
+                        android:inputType="number"
+                        android:paddingTop="@dimen/padding_8_dp"
+                        android:paddingBottom="@dimen/padding_8_dp"
+                        android:textColor="@color/blackColor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_8_dp"
+                        android:text="To"
+                        android:textColor="@color/blackColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etFilterRentTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_shape"
+                        android:gravity="center"
+                        android:hint="@string/max_10000000"
+                        android:inputType="number"
+                        android:paddingTop="@dimen/padding_8_dp"
+                        android:paddingBottom="@dimen/padding_8_dp"
+                        android:textColor="@color/blackColor"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center|start"
+                    android:paddingTop="@dimen/padding_8_dp"
+                    android:paddingBottom="@dimen/padding_8_dp"
+                    android:text="@string/how_many"
+                    android:textColor="@color/blackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_8_dp"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="@string/colon"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etFilterSeat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/border_shape"
+                    android:gravity="center"
+                    android:hint="@string/sample_seats"
+                    android:inputType="number"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btShowFilterId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_design"
+                android:paddingStart="@dimen/margin_60dp"
+                android:paddingEnd="@dimen/margin_60dp"
+                android:layout_marginTop="@dimen/margin_24_dp"
+                android:text="Search"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
+
+

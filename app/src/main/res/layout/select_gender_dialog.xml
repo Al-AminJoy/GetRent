@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/basicColor">
+
+    <ImageView
+        android:id="@+id/ivDialogMale"
+        android:layout_width="@dimen/maxHeight"
+        android:layout_height="@dimen/maxHeight"
+        android:layout_marginTop="@dimen/margin_30_dp"
+        android:src="@drawable/male"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDialogFemale"
+        android:layout_width="@dimen/maxHeight"
+        android:layout_height="@dimen/maxHeight"
+        android:layout_marginTop="@dimen/margin_30_dp"
+        android:src="@drawable/female"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8_dp"
+        android:text="@string/male"
+        android:textColor="@color/whiteColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivDialogMale"
+        app:layout_constraintStart_toStartOf="@+id/ivDialogMale"
+        app:layout_constraintTop_toBottomOf="@+id/ivDialogMale" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8_dp"
+        android:layout_marginBottom="@dimen/margin_24_dp"
+        android:text="@string/female"
+        android:textColor="@color/whiteColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivDialogFemale"
+        app:layout_constraintStart_toStartOf="@+id/ivDialogFemale"
+        app:layout_constraintTop_toBottomOf="@+id/ivDialogFemale" />
+
+    <ImageView
+        android:id="@+id/ivDialogCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8_dp"
+        android:layout_marginEnd="@dimen/margin_8_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_cancel" />
+
+
+</android.support.constraint.ConstraintLayout>

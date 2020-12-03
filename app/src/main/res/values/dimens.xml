@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="maxHeight">150dp</dimen>
+
+    <dimen name="margin_2_dp">2dp</dimen>
+    <dimen name="margin_4_dp">4dp</dimen>
+    <dimen name="margin_8_dp">8dp</dimen>
+    <dimen name="margin_16_dp">16dp</dimen>
+    <dimen name="margin_24_dp">24dp</dimen>
+    <dimen name="margin_30_dp">30dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+
+    <dimen name="padding_2_dp">2dp</dimen>
+    <dimen name="padding_4_dp">4dp</dimen>
+    <dimen name="padding_8_dp">8dp</dimen>
+    <dimen name="padding_16_dp">16dp</dimen>
+    <dimen name="padding_24_dp">24dp</dimen>
+
+    <dimen name="detailsActivityAllTextSize">15sp</dimen>
+    <dimen name="navigation_textSize">15sp</dimen>
+    <dimen name="navigation_headerName_textSize">20sp</dimen>
+    <dimen name="navigation_headerEmail_textSize">15sp</dimen>
+    <dimen name="communicateTextSize">18sp</dimen>
+
+
+</resources>

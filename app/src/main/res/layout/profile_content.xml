@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/profiletoolbar"
+        layout="@layout/toolbar_in_other_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profiletoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30_dp"
+                android:layout_marginTop="@dimen/margin_24_dp"
+                android:layout_marginRight="@dimen/margin_30_dp"
+                android:layout_marginBottom="@dimen/margin_8_dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/maxHeight"
+                        android:layout_height="@dimen/maxHeight"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_24_dp"
+                        android:src="@drawable/profile" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/blackColor" />
+
+                    <TextView
+                        android:id="@+id/tvprofilenameid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="@dimen/margin_30_dp"
+                        android:gravity="center"
+                        android:text="Al-Amin Islam Joy"
+                        android:textColor="@color/blackColor"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16_dp"
+                        android:layout_marginEnd="@dimen/margin_8_dp"
+                        android:padding="@dimen/padding_4_dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center|start"
+                            android:text="@string/email"
+                            android:textColor="@color/blackColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/colon"
+                            android:textColor="@color/blackColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvprofileemailid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center|start"
+                            android:text="@string/sample_email"
+                            android:textColor="@color/blackColor"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16_dp"
+                        android:layout_marginEnd="@dimen/margin_8_dp"
+                        android:padding="@dimen/padding_4_dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center|start"
+                            android:text="@string/number"
+                            android:textColor="@color/blackColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/colon"
+                            android:textColor="@color/blackColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvprofilenumberid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center|start"
+                            android:text="@string/sample_num"
+                            android:textColor="@color/blackColor"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16_dp"
+                        android:layout_marginEnd="@dimen/margin_8_dp"
+                        android:layout_marginBottom="@dimen/margin_24_dp"
+                        android:padding="@dimen/padding_4_dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center|start"
+                            android:text="@string/gender"
+                            android:textColor="@color/blackColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/colon"
+                            android:textColor="@color/blackColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvprofilegenderid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center|start"
+                            android:text="@string/male"
+                            android:textColor="@color/blackColor"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btProfileEditeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_16_dp"
+                android:layout_marginBottom="@dimen/margin_8_dp"
+                android:background="@drawable/button_design"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:text="@string/edit_profile"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottomHomeID"
+        layout="@layout/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
